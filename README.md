@@ -1,6 +1,10 @@
 # test-project
 
-> A Vue.js project with sass and rounter
+> A Vue.js project with sass and router
+
+One global CSS File is loaded to the project in build/utils.js where global variables, scaffoldings or normalizings can be stored.
+Each component has its own scoped style additionally and can use the global styles as well.
+
 
 ## Build Setup
 

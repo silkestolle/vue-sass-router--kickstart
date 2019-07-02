@@ -22,6 +22,7 @@ export default {
 <style lang="scss" scoped>
 .hello-sis {
   &__headline {
+    color: $brand;
     font-style: italic;
   }
 }

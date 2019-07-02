@@ -1,7 +1,10 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <router-link to="/sis">Say hello to Sis...</router-link>
+  <div class="hello-world">
+    <img src="../assets/logo.png"
+         class="hello-world__logo">
+    <h1 class="hello-world__headline">{{ msg }}</h1>
+    <router-link to="/sis"
+                 class="hello-world__link">Say hello to Sis...</router-link>
   </div>
 </template>
 
@@ -18,6 +21,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.hello-world {
+  &__logo {
+    max-width: 100%;
+    height: auto;
+    float: right;
+  }
 
+  &__headline {
+    font-style: italic;
+  }
+}
 </style>
